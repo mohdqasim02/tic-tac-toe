@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "module": "ES6",
+    "strict": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    // "moduleDetection": "force",
+    "noEmitOnError": true
+  }
+}

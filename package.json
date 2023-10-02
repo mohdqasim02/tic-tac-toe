@@ -1,0 +1,17 @@
+{
+  "name": "stratego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean-build": "rm -rfd dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/assert": "^1.5.7",
+    "typescript": "^5.2.2"
+  }
+}
