@@ -1,5 +1,4 @@
-"use strict";
-class GameView {
+export class GameView {
     #cells;
     #gameBoard;
     constructor() {
@@ -14,7 +13,9 @@ class GameView {
     start(makeMove = console.log) {
         this.#setupCells(makeMove);
     }
+    render(gameStatus) {
+        if (gameStatus.isGameOver)
+            return;
+        console.log(gameStatus.moves);
+    }
 }
-window.onload = () => {
-    new GameView().start();
-};

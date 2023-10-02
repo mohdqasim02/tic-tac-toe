@@ -1,4 +1,4 @@
-class GameView {
+export class GameView {
   #cells;
   #gameBoard;
 
@@ -16,8 +16,10 @@ class GameView {
   start(makeMove = console.log) {
     this.#setupCells(makeMove);
   }
-}
 
-window.onload = () => {
-  new GameView().start();
-};
+  render(gameStatus: any) {
+    if (gameStatus.isGameOver) return;
+
+    console.log(gameStatus.moves);
+  }
+}
