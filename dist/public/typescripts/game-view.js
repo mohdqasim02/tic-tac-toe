@@ -14,8 +14,10 @@ export class GameView {
         this.#setupCells(makeMove);
     }
     render(gameStatus) {
-        if (gameStatus.isGameOver)
-            return;
-        console.log(gameStatus.moves);
+        const { moves } = gameStatus;
+        Object.entries(moves).forEach(([position, symbol]) => {
+            const index = parseInt(position);
+            this.#cells[index].innerText = symbol;
+        });
     }
 }

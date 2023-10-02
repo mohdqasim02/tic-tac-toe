@@ -5,7 +5,7 @@ export class Game {
         this.players = players;
     }
     isGameOver() {
-        return this.players.totalMovesMade() === 9;
+        return this.players.totalMovesMade() >= 9;
     }
     makeMove(move) {
         this.players.recordMove(move);

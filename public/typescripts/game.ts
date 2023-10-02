@@ -10,7 +10,7 @@ export class Game {
   }
 
   isGameOver() {
-    return this.players.totalMovesMade() === 9;
+    return this.players.totalMovesMade() >= 9;
   }
 
   makeMove(move: Move) {
